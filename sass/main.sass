@@ -1,0 +1,344 @@
+//Generales//
+
+body
+  background: linear-gradient(to right, #ff0d77, #b600cb)
+  font-family: 'Work Sans', sans-serif
+  margin: 1.5rem
+
+//Fin generales//
+
+//Landing//
+
+.landing
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  height: 30rem
+  gap: 1rem
+
+.landing__item-imagen
+  grid-column: 1 / 3
+  grid-row: 1 / 3
+  background-image: url("../img/tacos-2.jpg")
+  background-size: cover
+  background-position: right
+  display: flex
+  flex-direction: column
+  justify-content: center
+  padding-left: 2rem
+
+.landing__item-price-tacos
+  grid-column: 3 / 4
+  grid-row: 1 / 2
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  background-color: #ffbd15
+  color: black
+
+.landing__item-price-kombucha
+  grid-column: 3 / 4
+  grid-row: 2 / 3
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  background-color: #ffbd15
+  color: black
+
+.price__numbers
+  font-size: 4rem
+  font-weight: 300
+
+.price__text
+  font-size: .8rem
+  font-weight: 700
+
+.landing__title
+  background-color: #ffbd15
+  color: black
+  width: 15rem
+  padding-left: .2rem
+  padding-right: .2rem
+  font-size: 1.6rem
+  font-weight: 700
+  text-align: center
+
+.landing__subtitle
+  background-color: #ffbd15
+  color: black
+  width: 10rem
+  padding-left: .2rem
+  padding-right: .2rem
+  font-size: 1rem
+  font-weight: 700
+  text-align: center
+
+//Fin landing//
+
+//Categories//
+
+.categories
+  display: grid
+  grid-template-columns: repeat(5, 1fr)
+  gap: .5rem
+  padding: 0
+  margin-top: 1rem
+
+.categories__tacos
+  grid-column: 1 / 2
+  list-style: none
+  background-color: #ffbd15
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: .3rem
+  font-weight: 600
+
+.categories__tacos:hover
+  background-color: #ecab07
+  color: white
+  font-weight: 700
+
+.categories__beers
+  grid-column: 2 / 3
+  background-color: #ffbd15
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: .3rem
+  font-weight: 600
+
+.categories__beers:hover
+  background-color: #ecab07
+  color: white
+  font-weight: 700
+
+.categories__wines
+  grid-column: 3 / 4
+  background-color: #ffbd15
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: .3rem
+  font-weight: 600
+
+.categories__wines:hover
+  background-color: #ecab07
+  color: white
+  font-weight: 700
+
+.categories__desserts
+  grid-column: 4 / 5
+  background-color: #ffbd15
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: .3rem
+  font-weight: 600
+
+.categories__desserts:hover
+  background-color: #ecab07
+  color: white
+  font-weight: 700
+
+.categories__reservations
+  grid-column: 5 / 6
+  background-color: #ffbd15
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: .3rem
+  font-weight: 600
+
+.categories__reservations:hover
+  background-color: #ecab07
+  color: white
+  font-weight: 700
+
+//Fin categories//
+
+//Cards//
+
+.cards
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  grid-template-rows: 1fr
+  gap: .5rem
+  margin-top: 1rem
+  padding: 0
+
+.cards__tacos
+  grid-column: 1 / 2
+  background-color: rgba(255, 255, 255, 0.24)
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-align: center
+  padding: .5rem
+  border-radius: .4rem
+
+.cards__tacos:hover
+  background-color: rgba(255, 255, 255, 0.63)
+
+.cards__beer
+  grid-column: 2 / 3
+  background-color: rgba(255, 255, 255, 0.24)
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-align: center
+  padding: .5rem
+  border-radius: .4rem
+
+.cards__beer:hover
+  background-color: rgba(255, 255, 255, 0.63)
+
+.cards__wine
+  grid-column: 3 / 4
+  background-color: rgba(255, 255, 255, 0.24)
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-align: center
+  padding: .5rem
+  border-radius: .4rem
+
+.cards__wine:hover
+  background-color: rgba(255, 255, 255, 0.63)
+
+.cards__music
+  grid-column: 4 / 5
+  background-color: rgba(255, 255, 255, 0.24)
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-align: center
+  padding: .5rem
+  border-radius: .4rem
+
+.cards__music:hover
+  background-color: rgba(255, 255, 255, 0.63)
+
+.cards__emoji
+  font-size: 3rem
+
+.cards__title
+  font-weight: 700
+  font-size: 1.2rem
+
+//Fin cards//
+
+//Producto//
+
+.product
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  background-color: white
+  margin-top: 1rem
+
+.product__image
+  grid-column: 1 / 2
+
+.product__text
+  grid-column: 2 / 3
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+.product__space
+  grid-column: 3 / 4
+
+.product__image-taco-size
+  width: 100%
+
+.product__text-title
+  font-size: 1.3rem
+  font-weight: 700
+  padding: 0
+
+.product__text-title:hover
+  color: #ffbd15
+
+.product__text-description
+  width: 18rem
+  padding: .3rem 0 1rem 0
+
+.product__text-button
+  background-color: #ffbd15
+  border-radius: .3rem
+  padding: .5rem 1rem .5rem 1rem
+
+.product__text-button:hover
+  background-color: #ecab07
+  color: white
+  font-weight: 700
+
+//Fin producto//
+
+
+//falta terminar que sea responsive ..................//
+
+@media screen and (max-width: 500px)
+  .landing
+    grid-template-columns: 1fr
+    grid-template-rows: 3fr 1fr 1fr
+    height: 40rem
+    &__item-imagen
+      grid-column: 1 / 2
+      grid-row: 1 / 2
+    &__item-price-tacos
+      grid-column: 1 / 2
+      grid-row: 2 / 3
+    &__item-price-kombucha
+      grid-column: 1 / 2
+      grid-row: 3 / 4
+
+  .categories
+    grid-template-columns: 1fr
+    &__tacos
+      grid-column: 1 / 2
+      grid-row: 1 / 2
+    &__beers
+      grid-column: 1 / 2
+      grid-row: 2 / 3
+    &__wines
+      grid-column: 1 / 2
+      grid-row: 3 / 4
+    &__desserts
+      grid-column: 1 / 2
+      grid-row: 4 / 5
+    &__reservations
+      grid-column: 1 / 2
+      grid-row: 5 / 6
+
+  .cards
+    grid-template-columns: 2fr
+    &__tacos
+      grid-column: 1 / 2
+      grid-row: 1 / 2
+    &__beer
+      grid-column: 1 / 2
+      grid-row: 2 / 3
+    &__wine
+      grid-column: 1 / 2
+      grid-row: 3 / 4
+    &__music
+      grid-column: 1 / 2
+      grid-row: 4 / 5
+
+  .product
+    grid-template-columns: 1fr
+    grid-template-rows: 3fr 2fr
+    height: 50rem
+    &__imagen
+      grid-column: 1 / 2
+      grid-row: 1 / 2
+    &__text
+      padding: 1rem
+      grid-column: 1 / 2
+      grid-row: 2 / 3
